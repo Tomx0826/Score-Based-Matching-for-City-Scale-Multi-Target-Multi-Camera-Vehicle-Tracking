@@ -1,4 +1,5 @@
 # Score-Based-Matching-for-City-Scale-Multi-Target-Multi-Camera-Vehicle-Tracking
+These codes are modified from https://github.com/Yejin0111/AICITY2022-Track1-MTMC for main flow, https://github.com/LCFractal/AIC21-MTMC and https://github.com/michuanhaohao/AICITY2021_Track2_DMT for Re-ID/UDA training.  
 
 ## 1. DET
  ### Follow the same steps in https://github.com/Yejin0111/AICITY2022-Track1-MTMC:
@@ -21,7 +22,10 @@
 python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml    
 ```
    - Stage 2: UDA training  
-	**Revise the Code: ./datasets/make_dataloaderV2.py** at line 19 and line 20  
+	**Data Preparation**  
+	&nbsp; &nbsp; Put data "UDA/Test/" under folder make_dataset for UDA training  
+	**Revise the Code:**  
+	&nbsp; &nbsp; Revise **./datasets/make_dataloaderV2.py** at line 19 and line 20  
 		>line 19 | 'aic': AIC       --> #'aic': AIC  
 		line 20 | #'aic': AIC_UDA  --> 'aic': AIC_UDA
 
