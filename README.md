@@ -38,6 +38,7 @@ python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml
 ```
 python train_stage2V3_v1.py --config_file=./configs_syn/stage2/resnext101a.yml
 ``` 
+&nbsp; &nbsp; **Our trained weights can be download from [this link](<https://drive.google.com/drive/folders/19nUguPWtqCMkfSRHH7tUakPCydOOj76z?usp=sharing>).**  
 ### Re-ID feature extraction in the folder reid:  
 &nbsp; &nbsp; &nbsp; &nbsp; Step 1: Put the testing data "crop_test_det_2666_89" in the folder reid/datasets/  
 &nbsp; &nbsp; &nbsp; &nbsp; Step 2: Put the trained weights or our trained weights, "resnext101_ibn_a_2.pth," in the folder reid/reid_model/focal/rxt_uda/  
