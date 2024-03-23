@@ -51,7 +51,7 @@ python train_stage2V3_v1.py --config_file=./configs_syn/stage2/resnext101a.yml
 &nbsp; &nbsp; &nbsp; &nbsp; 1. Run "python run_aicity_pca.py AICITY test_pca --dir_save scmt" to get the SCMT results.  
 &nbsp; &nbsp; &nbsp; &nbsp; 2. Run "python stat_occlusion_scmt2.py scmt" to generate the dictionary for occlusion objects. 
 
-## ICA_2
-&nbsp; &nbsp; &nbsp; &nbsp; 1. Put the results of SCMT (the folder scmt) in the folder /ICA_2/data/
-&nbsp; &nbsp; &nbsp; &nbsp; 2. Run "bash run.sh scmt"
-&nbsp; &nbsp; &nbsp; &nbsp; 3. The final MTMC tracking results are in the file "submit_result_expand_1.3_truncation_filter_roi_result.txt"
+## ICA_2  
+&nbsp; &nbsp; &nbsp; &nbsp; 1. Put the results of SCMT (the folder scmt) in the folder /ICA_2/data/  
+&nbsp; &nbsp; &nbsp; &nbsp; 2. Run "bash run.sh scmt"  
+&nbsp; &nbsp; &nbsp; &nbsp; 3. The final MTMC tracking results are in the file "submit_result_expand_1.3_truncation_filter_roi_result.txt"  
