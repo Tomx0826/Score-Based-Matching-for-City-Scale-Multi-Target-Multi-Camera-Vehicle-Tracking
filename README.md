@@ -3,6 +3,7 @@ These codes are modified from https://github.com/Yejin0111/AICITY2022-Track1-MTM
 ## DATASET
 The CityFlowV2 dataset needs to be applied for from [AiCityChallenge](<https://www.aicitychallenge.org/2022-challenge-tracks/>).
 
+
 ## DET
  ### Follow the same steps in https://github.com/Yejin0111/AICITY2022-Track1-MTMC:
    1. Data preparation:
@@ -25,8 +26,8 @@ python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml
 ```
    - Stage 2: UDA training  
 	**Data Preparation**  
-	&nbsp; &nbsp; Put data "UDA/Test/" under folder make_dataset for UDA training  
-	&nbsp; &nbsp; (To follow the flow of [UDA training](<https://github.com/michuanhaohao/AICITY2021_Track2_DMT>), we adopt [ByteTrack](<https://github.com/ifzhang/ByteTrack>) with CityFlowV2 to generate UDA/Test/)  	
+	&nbsp; &nbsp; Put data "UDA/Test/" under folder make_dataset for UDA training    
+	&nbsp; &nbsp; (To follow the flow of [UDA training](<https://github.com/michuanhaohao/AICITY2021_Track2_DMT>), we adopt [ByteTrack](<https://github.com/ifzhang/ByteTrack>) with CityFlowV2 to generate UDA/Test/)  
 	**Revise the Code:**  
 	&nbsp; &nbsp; Revise **./datasets/make_dataloaderV2.py** at line 19 and line 20  
 		>line 19 | 'aic': AIC       --> #'aic': AIC  
