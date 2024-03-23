@@ -15,12 +15,12 @@
         >Step 1: Execute build_reID_dataset.py to generate train_reID/ and validation_reID/  
         >Step 2: Execute add_syn_dataset.py to generate train_reID2/ and validation_reID2/  
 
-      Then, run trainV6.py.
-```
-python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml
-```
-
-   **Stage 2: UDA training:**   
-		- Revise the Code: ./datasets/make_dataloaderV2.py, line 19 and 20
-			line 19 'aic': AIC,       --> 19 #'aic': AIC,
-			line 20 #'aic': AIC_UDA,  --> 20 'aic': AIC_UDA,
+      Then, run trainV6.py.  
+	``` 
+	python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml    
+	```
+   - Stage 2: UDA training   
+	Revise the Code: ./datasets/make_dataloaderV2.py, at line 19 and line 20
+		>line 19 | 'aic': AIC       --> #'aic': AIC    
+   		>line 20 | #'aic': AIC_UDA  --> 'aic': AIC_UDA
+   
