@@ -1,0 +1,6 @@
+DET_SOURCE_DIR: '/Disk_New/AI_City_Challenge/AIC21-MTMC/datasets/detection/images/test/S06//'
+REID_MODEL: 'reid_model/focal/rxt_v1/resnext101_ibn_a_20.pth'
+REID_BACKBONE: 'resnext101_ibn_a'
+DET_IMG_DIR: '/Disk_New/AI_City_Challenge/AIC21-MTMC/datasets/2022_first_palce_mcmt_gt/query/'
+DATA_DIR: '/Disk_New/AI_City_Challenge/AIC21-MTMC/datasets/UDA_stage2/resnext101_a/2022_first_palce_mcmt_gt/focal/v1/resnext101_ibn_a_20_query/'
+REID_SIZE_TEST: [384, 384]

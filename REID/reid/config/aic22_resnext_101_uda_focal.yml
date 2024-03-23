@@ -1,0 +1,7 @@
+DET_SOURCE_DIR: './'
+REID_MODEL: 'reid_model/focal/rxt_uda/resnext101_ibn_a_2.pth'
+#REID_MODEL: 'reid_model/focal/rxt_v1/resnext101_ibn_a_50.pth'
+REID_BACKBONE: 'resnext101_ibn_a'
+DET_IMG_DIR: './datasets/crop_test_det_2666_89/'
+DATA_DIR: './'
+REID_SIZE_TEST: [384, 384]

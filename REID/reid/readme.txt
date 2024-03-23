@@ -1,0 +1,1 @@
+python extract_image_feat_resnext101.py "aic22_resnext_101_uda_focal.yml"
