@@ -36,7 +36,7 @@ python train_stage2V3_v1.py --config_file=./configs_syn/stage2/resnext101a.yml
 ``` 
 ### Re-ID feature extraction in the folder reid:  
 &nbsp; &nbsp; &nbsp; &nbsp; Step 1: Put the testing data "crop_test_det_2666_89" in the folder reid/datasets/  
-&nbsp; &nbsp; &nbsp; &nbsp; Step 2: Put the trained weights "resnext101_ibn_a_2.pth" in the folder reid/reid_model/focal/rxt_uda/  
+&nbsp; &nbsp; &nbsp; &nbsp; Step 2: Put the trained weights or our trained weights, "resnext101_ibn_a_2.pth," in the folder reid/reid_model/focal/rxt_uda/  
 &nbsp; &nbsp; &nbsp; &nbsp; Step 3: Run python extract_image_feat_resnext101.py "aic22_resnext_101_uda_focal.yml" to generate ReID features (dets_feat.pkl)  
 &nbsp; &nbsp; &nbsp; &nbsp; Step 4: Run read_dict.py to generate aic22_uda.pkl  
 
