@@ -1,0 +1,56 @@
+MODEL:
+  PRETRAIN_CHOICE: 'imagenet'
+  PRETRAIN_PATH: './resnext101_ibn_a-6ace051d.pth'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NAME: 'resnext101_ibn_a'
+  NO_MARGIN: False
+  DEVICE_ID: ('0')
+  NECK: 'bnneck'
+
+MS_RECONST:
+  NOISE_FACTOR: 0.0
+
+INPUT:
+  SIZE_TRAIN: [384, 384]
+  SIZE_TEST: [384, 384]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+
+DATASETS:
+  NAMES: ('aic')
+
+DATALOADER: 
+  SAMPLER: 'softmax_triplet_focal'
+  NUM_INSTANCE: 8
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 50
+  BASE_LR: 0.01
+  IMS_PER_BATCH: 32
+  STEPS: [25, 40]
+  GAMMA: 0.1
+  WARMUP_FACTOR: 0.01
+  WARMUP_EPOCHS: 10
+  WARMUP_METHOD: 'linear'
+  LARGE_FC_LR: True
+  CHECKPOINT_PERIOD: 10
+  LOG_PERIOD: 200
+  EVAL_PERIOD: 10000
+  FP16_ENABLED: True
+
+TEST:
+  IMS_PER_BATCH: 128
+  RE_RANKING: False
+  RE_RANKING_TRACK: True
+  WEIGHT: './logs_syn/stage1/v2/resnext101a_384_V6/resnext101_ibn_a_80.pth'
+  NECK_FEAT: 'after'
+  FEAT_NORM: 'yes'
+  FLIP_FEATS: 'on'
+  EVAL: True
+  FIC: True
+OUTPUT_DIR: './logs_syn/stage1/resnext101a_384_V6'
