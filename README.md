@@ -54,4 +54,6 @@ python train_stage2V3_v1.py --config_file=./configs_syn/stage2/resnext101a.yml
 ## ICA_2  
 &nbsp; &nbsp; &nbsp; &nbsp; 1. Put the results of SCMT (the folder scmt) in the folder /ICA_2/data/  
 &nbsp; &nbsp; &nbsp; &nbsp; 2. Run "bash run.sh scmt"  
-&nbsp; &nbsp; &nbsp; &nbsp; 3. The final MTMC tracking results are in the file "submit_result_expand_1.3_truncation_filter_roi_result.txt"  
+&nbsp; &nbsp; &nbsp; &nbsp; 3. The final MTMC tracking results are in the file "submit_result_expand_1.3_truncation_filter_roi_result.txt" 
+
+Our Result can be download here: [track1.txt](<https://drive.google.com/file/d/1tpGhTlV8YqP_4oihVO1H3Fm9PnN70qiv/view?usp=sharing>)
