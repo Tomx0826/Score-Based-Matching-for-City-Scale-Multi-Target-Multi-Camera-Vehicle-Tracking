@@ -1,7 +1,7 @@
 # Score-Based-Matching-for-City-Scale-Multi-Target-Multi-Camera-Vehicle-Tracking
 These codes are modified from https://github.com/Yejin0111/AICITY2022-Track1-MTMC for main flow, https://github.com/LCFractal/AIC21-MTMC and https://github.com/michuanhaohao/AICITY2021_Track2_DMT for Re-ID and UDA training.  
 ## DATASET
-The CityFlowV2 dataset can be applied from [AiCityChallenge](<https://www.aicitychallenge.org/2022-challenge-tracks/>).
+The CityFlowV2 dataset needs to be applied for from [AiCityChallenge](<https://www.aicitychallenge.org/2022-challenge-tracks/>).
 
 ## DET
  ### Follow the same steps in https://github.com/Yejin0111/AICITY2022-Track1-MTMC:
