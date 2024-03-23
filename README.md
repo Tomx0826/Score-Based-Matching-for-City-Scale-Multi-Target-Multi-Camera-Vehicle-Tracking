@@ -26,7 +26,7 @@ python trainV6.py --config_file=./configs_syn/stage1/resnext101a.yml
    - Stage 2: UDA training  
 	**Data Preparation**  
 	&nbsp; &nbsp; Put data "UDA/Test/" under folder make_dataset for UDA training  
-	&nbsp; &nbsp; To follow the flow of [UDA training](<https://github.com/michuanhaohao/AICITY2021_Track2_DMT>), we adopt [ByteTrack](<https://github.com/ifzhang/ByteTrack>) with CityFlowV2 to generate UDA/Test/  	
+	&nbsp; &nbsp; (To follow the flow of [UDA training](<https://github.com/michuanhaohao/AICITY2021_Track2_DMT>), we adopt [ByteTrack](<https://github.com/ifzhang/ByteTrack>) with CityFlowV2 to generate UDA/Test/)  	
 	**Revise the Code:**  
 	&nbsp; &nbsp; Revise **./datasets/make_dataloaderV2.py** at line 19 and line 20  
 		>line 19 | 'aic': AIC       --> #'aic': AIC  
