@@ -62,4 +62,4 @@ python train_stage2V3_v1.py --config_file=./configs_syn/stage2/resnext101a.yml
 &nbsp; &nbsp; &nbsp; &nbsp; 3. The final MTMC tracking results are in the file "submit_result_expand_1.3_truncation_filter_roi_result.txt" 
 
 Our Result can be download here: [track1.txt](<https://drive.google.com/file/d/1tpGhTlV8YqP_4oihVO1H3Fm9PnN70qiv/view?usp=sharing>)  
-If you need the paper of this research, please contact us by email.
+If you need the paper of this research, please contact us by email: tom0826.ee09@nycu.edu.tw.
